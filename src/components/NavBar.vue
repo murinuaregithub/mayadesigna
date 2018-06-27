@@ -8,7 +8,11 @@
     <nav class="uk-navbar-container" uk-navbar>
         <div class="uk-navbar-right">
             <ul class="uk-navbar-nav">
-                <li class="uk-active"><a href="#">Active</a></li>
+                <li>
+                  <router-link to="/stills">
+                    Stills
+                  </router-link>
+                </li>
                 <li>
                     <a href="#">Parent</a>
                     <div class="uk-navbar-dropdown">

@@ -2,14 +2,11 @@
   <section>
     <div class="uk-section uk-section-muted">
       <div class="uk-container">
-        <div class="uk-child-width-1-2@m uk-grid-small uk-grid-match" uk-grid>
-          <div>
-            <div class="uk-card uk-card-secondary uk-card-body">
-              <h3 class="uk-card-title">Stills</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </div>
-          </div>
-          <tile title="tile" text="random text" photo="image1.jpg"/>
+        <div class="uk-child-width-1-2@m" uk-grid>
+          <router-link to="/stills">
+            <tile-image-down title="Stills" text="random text" photo="image2.jpg"/>
+          </router-link>
+          <tile-image-down title="CGI" text="random text" photo="image2.jpg"/>
         </div>
       </div>
     </div>
@@ -17,12 +14,25 @@
 </template>
 
 <script>
-import Tile from '../Tile';
+import TileImageUp from '../TileImageUp';
+import TileImageDown from '../TileImageDown';
 
 export default {
   name: 'CategorySection',
   components: {
-    Tile,
+    TileImageUp,
+    TileImageDown,
   },
 };
 </script>
+<style>
+.hover-card {
+  transform: scale(1);
+  transition: all .3s ease;
+}
+.hover-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0 5px #afafafa8;
+}
+</style>
+
