@@ -4,9 +4,9 @@
       <div class="uk-container">
         <div class="uk-child-width-1-2@m" uk-grid>
           <router-link to="/stills">
-            <tile-image-down title="Stills" text="random text" photo="image2.jpg"/>
+            <tile-image-down title="Stills" text="random text" photo="stills.jpg"/>
           </router-link>
-          <tile-image-down title="CGI" text="random text" photo="image2.jpg"/>
+          <tile-image-down title="CGI" text="random text" photo="other.jpg"/>
         </div>
       </div>
     </div>
@@ -33,6 +33,10 @@ export default {
 .hover-card:hover {
   transform: scale(1.02);
   box-shadow: 0px 0 5px #afafafa8;
+}
+.uk-card-media-bottom {
+  max-height: 330px;
+  overflow: hidden;
 }
 </style>
 

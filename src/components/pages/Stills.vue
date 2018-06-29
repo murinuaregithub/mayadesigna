@@ -1,25 +1,32 @@
 <template>
   <div>
-    <div class="uk-height-large uk-background-cover uk-light uk-flex uk-flex-top" uk-parallax="bgy: -40" id="stills-image">
-      <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="y: 50,0">Stills</h1>
+    <div class="uk-height-medium uk-background-cover uk-light uk-flex uk-flex-top" uk-parallax="bgy: -40" id="stills-image" />
+    <div class="uk-section uk-section-secondary">
+      <div class="uk-container uk-container-small uk-margin-large-bottom">
+        <h1 class="uk-heading-divider uk-text-center" uk-parallax="y: 20,0">Stills</h1>
+        <p class="uk-text-center" uk-parallax="y: 20,0">Whatever text insert lorem ipsum</p>
+      </div>
+      <gallery />
     </div>
-    <category-sections />
   </div>
 </template>
 
 <script>
-import CategorySections from '../sections/CategorySection';
+import Gallery from '../sections/Gallery';
 
 export default {
   name: 'Landing',
   components: {
-    CategorySections,
+    Gallery,
   },
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
+.uk-heading-divider {
+  border-bottom-color: #d64660 !important;
+}
 h1, h2 {
   font-weight: normal;
 }
@@ -35,6 +42,6 @@ a {
   color: #42b983;
 }
 #stills-image {
-  background-image: url('../../assets/image2.jpg');
+  background-image: url('../../assets/stills.jpg');
 }
 </style>

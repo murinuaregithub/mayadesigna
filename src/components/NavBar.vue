@@ -5,29 +5,41 @@
         Maya Designa
       </div>
     </router-link>
+      <div class="uk-container">
     <nav class="uk-navbar-container" uk-navbar>
         <div class="uk-navbar-right">
             <ul class="uk-navbar-nav">
                 <li>
-                  <router-link to="/stills">
-                    Stills
-                  </router-link>
+                  <a href="#about" uk-scroll>
+                    About us
+                  </a>
                 </li>
                 <li>
-                    <a href="#">Parent</a>
+                    <a href="#">Portofolio</a>
                     <div class="uk-navbar-dropdown">
                         <ul class="uk-nav uk-navbar-dropdown-nav">
-                            <li class="uk-active"><a href="#">Active</a></li>
-                            <li><a href="#">Item</a></li>
-                            <li><a href="#">Item</a></li>
+                            <li>
+                              <router-link to="/stills">
+                                Stills
+                              </router-link>
+                              </li>
+                            <li>
+                              <router-link to="/stills">
+                                CGI
+                              </router-link>
+                            </li>
                         </ul>
                     </div>
                 </li>
-                <li><a href="#">Item</a></li>
+                <li>
+                  <a href="#footer" uk-scroll >
+                    Contact
+                  </a>
+                </li>
             </ul>
-
-        </div>
+          </div>
     </nav>
+        </div>
   </header>
 </template>
 
@@ -39,12 +51,17 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.bg-half-height {
-  height: 60vh;
+header {
+  background-color: #d64660;
 }
-
 .uk-navbar-container:not(.uk-navbar-transparent) {
   border-bottom: 3px solid #d64660;
+  background: initial;
+}
+
+.uk-navbar-nav>li>a {
+  color: white;
+  font-weight: bold;
 }
 
 .logo {

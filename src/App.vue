@@ -25,6 +25,10 @@ export default {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* body {
+  background-image: url('./assets/background.jpg');
+} */
+
 .page-enter-active {
   transition: opacity 0.25s ease-out;
 }

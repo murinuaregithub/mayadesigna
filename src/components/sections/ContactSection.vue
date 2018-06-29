@@ -1,22 +1,37 @@
 <template>
-  <section class="contact-section">
-    <div class="uk-section uk-section-primary uk-preserve-color">
-      <div class="uk-container uk-container-small">
-        <form class="form-contaier">
-          <fieldset class="uk-fieldset">
-                <div class="uk-margin">
-                    <input class="uk-input" type="text" placeholder="Name">
-                </div>
-                <div class="uk-margin">
-                    <input class="uk-input" type="text" placeholder="Email">
-                </div>
-                <div class="uk-margin">
-                    <textarea class="uk-textarea" rows="5" placeholder="Textarea"></textarea>
-                </div>
-            </fieldset>
-        </form>
+  <section class="contact-section" id="footer">
+    <div class="uk-section uk-section-primary">
+      <div class="uk-container">
+        <div class="uk-grid-small uk-child-width-expand@s uk-text-center" uk-grid>
+          <div>
+            <div>
+              <span uk-icon="phone"></span>
+              <a href="tel:(0044) 07990 030 412">(0044) 07990 030 412</a>
+            </div>
+            <div>
+              <span uk-icon="phone"></span>
+              <a href="tel:(0044) 07720 229 450">(0044) 07720 229 450</a>
+            </div>
+          </div>
+          <div>
+            <span uk-icon="mail"></span>
+            <a href="mailto:sales@mayadesigna.com">
+              sales@mayadesigna.com
+            </a>
+          </div>
+          <div>
+            <span uk-icon="location"></span>
+            Maya Designa
+
+            The Incuba
+
+            1 Brewers Hill Rd
+
+            Dunstable, LU6 1AA
+          </div>
+        </div>
+        </div>
       </div>
-    </div>
   </section>
 </template>
 
@@ -35,9 +50,7 @@ export default {
 <style scoped>
 .uk-section-primary {
   background-color: #d64660 !important;
-}
-.form-container input{
-  background-color: white;
+  color: white;
 }
 </style>
 
